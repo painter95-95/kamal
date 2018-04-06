@@ -1,0 +1,36 @@
+@-ms-viewport {
+    width: device-width
+}
+
+@-o-viewport {
+    width: device-width
+}
+
+.list.tiles {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    list-style: none
+}
+svg:hover {
+    stroke: #6CC80F;
+    transition: 0.2s;
+}
+.list.tiles .tile {
+    position: relative;
+    height: 100px;
+    padding: 5px 9px;
+    display: block;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: background .2s ease-in-out;
+    transition: background .2s ease-in-out
+}
+
+@media (min-width:960px) {
+    .list.tiles .tile {
+        width: 12%
+    }
+}
